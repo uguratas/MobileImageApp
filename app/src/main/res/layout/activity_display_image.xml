@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ECEFF1"
+    tools:context=".DisplayImageActivity">
+
+    <TextView
+        android:id="@+id/imagePathTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:text="Image Path: "
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:id="@+id/displayImageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter" />
+
+    <LinearLayout
+        android:id="@+id/histogramLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+        <!-- Buraya histogram bileşenleri eklenebilir -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/rotateLeftButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/primaryColor"
+            android:textColor="@color/white"
+            style="@style/Widget.MaterialComponents.Button"
+            android:text="Rotate Left"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="10dp"/>
+
+        <Button
+            android:id="@+id/rotateRightButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/primaryColor"
+            android:textColor="@color/white"
+            style="@style/Widget.MaterialComponents.Button"
+            android:text="Rotate Right"
+            android:layout_marginEnd="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/grayscaleButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/primaryColor"
+            android:textColor="@color/white"
+            style="@style/Widget.MaterialComponents.Button"
+            android:text="Gray Scale"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="10dp"/>
+
+        <Button
+            android:id="@+id/selectRedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/primaryColor"
+            android:textColor="@color/white"
+            style="@style/Widget.MaterialComponents.Button"
+            android:text="Select Red to Gray"
+            android:layout_marginEnd="20dp"/>
+    </LinearLayout>
+
+</LinearLayout>

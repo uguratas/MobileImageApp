@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECEFF1"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Histogram"
+        android:textColor="@android:color/black"
+        android:textStyle="bold|italic"
+        android:textSize="20sp"
+        android:layout_marginLeft="150dp"/>
+    <com.example.mobileimageapp.HistogramView
+        android:id="@+id/histogramView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/black" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pixel Value"
+        android:textColor="@android:color/black"
+        android:textStyle="bold|italic"
+        android:textSize="20sp"
+        android:layout_marginLeft="150dp"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        style="@style/CustomTextViewStyle">
+
+        <TextView
+            android:id="@+id/histogramValuesTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:padding="1dp"
+            android:shadowColor="#aaaaaa"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="3"
+            android:typeface="serif"
+            android:textStyle="bold|italic"
+            android:layout_gravity="center_horizontal"/>
+    </ScrollView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Model Value"
+        android:textColor="@android:color/black"
+        android:textStyle="bold|italic"
+        android:layout_marginLeft="150dp"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/firebaseDataTextView"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="2dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textColor="@android:color/black"
+        style="@style/CustomTextViewStyle" />
+    <TextView
+        android:id="@+id/weightedSumTextView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/firebaseDataTextView"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        style="@style/CustomTextViewStyle"/>
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:backgroundTint="@color/primaryColor"
+        android:textColor="@color/white"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

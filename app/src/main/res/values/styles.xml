@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomTextViewStyle">
+        <item name="android:background">@drawable/custom_textview</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:typeface">serif</item>
+        <!-- Gölge -->
+        <item name="android:shadowColor">#aaaaaa</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">3</item>
+        <!-- Metin biçimi -->
+        <item name="android:textStyle">bold|italic</item>
+    </style>
+</resources>

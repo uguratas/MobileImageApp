@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "81667424833",
+    "project_id": "mobileimage-3adb6",
+    "storage_bucket": "mobileimage-3adb6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:81667424833:android:5eb31929a4ebc1d86dfcc0",
+        "android_client_info": {
+          "package_name": "com.example.mobileimageapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAL7FdcBlCQc2cxThtCscjT8JmC3QjJQDg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
